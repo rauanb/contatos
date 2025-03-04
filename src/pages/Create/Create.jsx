@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import { addUser } from "../../assets/UserReducer"
 import { useDispatch, useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
-import { Titulo, Div, Form, Input, Botoes } from "./styles"
-import { Container, ButtonOk, ButtonCancel } from "../../styles"
+// import { Form, Input, Botoes } from "./styles"
+import { Container, Div, Titulo, Button, ButtonCancel, Form, Input, Botoes } from "../../styles"
 
 function Create() {
 
@@ -30,7 +30,6 @@ function Create() {
             <Container>
                 <Div>
                     <Titulo>Novo Contato</Titulo>
-                    {/* <Form onSubmit={handleSubmit}> */}
                     <Form>
                         <div>
                             <label htmlFor="name">Name:
@@ -46,7 +45,7 @@ function Create() {
                             <Input type="tel" name="telefone" onChange={(e) => setTelefone(e.target.value)} id="telefone"/>
                         </div>
                         <Botoes>
-                        <ButtonOk onClick={handleSubmit}>Adicionar</ButtonOk>
+                        <Button onClick={handleSubmit}>Adicionar</Button>
                         <ButtonCancel onClick={handleCancel}>Cancelar</ButtonCancel>
                         </Botoes>
                     </Form>

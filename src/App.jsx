@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
+import Home from './pages/Home/Home'
 import Create from './pages/Create/Create'
-import Update from './pages/Update'
+import Update from './pages/Update/Update'
 import EstiloGlobal from './styles'
 
 function App() {
