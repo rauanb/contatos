@@ -2,7 +2,7 @@ import React from "react";
 
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { deleteUser } from "./UserReducer";
+import { deleteUser } from "../assets/UserReducer";
 
 function Home() {
 

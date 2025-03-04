@@ -1,12 +1,15 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './Home'
-import Create from './Create'
-import Update from './Update'
+import Home from './pages/Home'
+import Create from './pages/Create/Create'
+import Update from './pages/Update'
+import EstiloGlobal from './styles'
 
 function App() {
 
   return (
+    <>
+    <EstiloGlobal />
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />}></Route>
@@ -14,6 +17,7 @@ function App() {
         <Route path='/edit/:id' element={<Update />}></Route>
       </Routes>
     </BrowserRouter>
+    </>
   )
 }
 
